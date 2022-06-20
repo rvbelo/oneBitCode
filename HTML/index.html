@@ -55,7 +55,9 @@
     <hr />
     <h1>Criando Tabelas</h1>
     <table border="1">
-      <caption>Satélites de Urano</caption>
+      <caption>
+        Satélites de Urano
+      </caption>
       <thead>
         <tr>
           <th>Nome</th>
@@ -76,33 +78,45 @@
     <hr />
     <h1>Conhecendo os Forms e Validando os Campos</h1>
     <h3>Encontre no Google</h3>
-    <form action="https://www.google.com/search" >
+    <form action="https://www.google.com/search">
       <label for="q">O que deseja pesquisar?</label>
-      <input type="text" id="q" name="q" placeholder="Nasa, SpaceX" required autocomplete="off" min="5" max="15">
-      <input type="submit" value="Pesquisar">
+      <input
+        type="text"
+        id="q"
+        name="q"
+        placeholder="Nasa, SpaceX"
+        required
+        autocomplete="off"
+        min="5"
+        max="15"
+      />
+      <input type="submit" value="Pesquisar" />
     </form>
     <hr />
-    <input list="browsers">
+    <input list="browsers" />
     <datalist id="browsers">
-      <option value="Internet Explore">
-      <option value="Firefox">
-      <option value="Chrome">
-      <option value="Opera">
-      <option value="Safari">
+      <option value="Internet Explore"></option>
+      <option value="Firefox"></option>
+      <option value="Chrome"></option>
+      <option value="Opera"></option>
+      <option value="Safari"></option>
     </datalist>
+
     <hr />
     <h1>Aprofudandos nos Inputs</h1>
     <form action="https://www.example.com">
-      <input type=" text" name="firstname"><br/>
-      <input type="password" name="password"><br/>
-      <input type="radio" name="gender" value="male" checked> Male<br/>
-      <input type="radio" name="gender" value="female" >Female<br/>
-      <input type="radio" name="gender" value="other" >Other<br/>
-      <input type="checkbox" name="vehicle1" value="bike">I have a bike<br/>
-      <input type="color" name="color"><br/>
-      <input type="date" name="bday"><br/>
-      Select a file: <input type="file" name="myFile"><br/>
-      <input type="search" name="googlesearch"><br/>
+      <input type=" text" name="firstname" /><br />
+      <input type="password" name="password" /><br />
+      <input type="radio" name="gender" value="male" checked /> Male<br />
+      <input type="radio" name="gender" value="female" />Female<br />
+      <input type="radio" name="gender" value="other" />Other<br />
+      <input type="checkbox" name="vehicle1" value="bike" />I have a bike<br />
+      <input type="color" name="color" /><br />
+      <input type="date" name="bday" /><br />
+      Select a file: <input type="file" name="myFile" /><br />
+      <input type="search" name="googlesearch" /><br />
+      <input type="range" min="1" max="10" /><br />
+      <input type="time" /><br />
     </form>
     <hr />
     <h1>Criando Primeiro Form</h1>
@@ -110,54 +124,60 @@
     <form action="">
       <div>
         <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" />
       </div>
-      <br/>
-<div>
-  <label for="email">Email:</label>
-  <input type="email" name="email" id="email">
-  <label for="pass">Password:</label>
-  <input type="password" name="password" id="password">
-</div>
-<br/>
-   <div>
-    <label for="date">Data de Nascimento:</label>
-    <input type="data" name="date" id="date">
-    <label for="upload">- Foto: </label>
-    <input type="file" name="upload" id="upload">
-   </div>
-   <br/>
-   <div>
-    <label for="nacionality">Nacionalidade: </label>
-    <select name="nacionality" id="nacionality">
-      <option value="russian">Russo</option>
-      <option value="american">Americano</option>
-      <option value="brasilian">Brasileiro</option>
-    </select>
-    Genero:
-    <label for="female">F</label>
-    <input type="radio" name="gender" value="femaly" id="female"> 
-    <label for="man">M</label>
-    <input type="radio" name="gender" value="man" id="man">
-   </div>
-   <br/>
-   <div>
-    <p>Suas principais qualidades:</p>
-    <label for="int">Inteligência</label>
-    <input type="checkbox" name="int" id="int"> |
-    <label for="res">Resiliência</label>
-    <input type="checkbox" name="res" id="res"> |
-    <label for="fis">Preparo Físico</label>
-    <input type="checkbox" name="fis" id="fis"> 
-   </div>
-   <br/>
-<div>
-  <textarea placeholder="Porque você gostaria de ser um austronauta?" id="description" name="description" cols="30" rows="10"></textarea>
-</div>
-<br/>
-<div>
-  <button type="submit" value="criar">Enviar</button>
-</div>
-  </form>
-</body>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <label for="pass">Password:</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <br />
+      <div>
+        <label for="date">Data de Nascimento:</label>
+        <input type="data" name="date" id="date" />
+        <label for="upload">- Foto: </label>
+        <input type="file" name="upload" id="upload" />
+      </div>
+      <br />
+      <div>
+        <label for="nacionality">Nacionalidade: </label>
+        <select name="nacionality" id="nacionality">
+          <option value="russian">Russo</option>
+          <option value="american">Americano</option>
+          <option value="brasilian">Brasileiro</option>
+        </select>
+        Genero:
+        <label for="female">F</label>
+        <input type="radio" name="gender" value="femaly" id="female" />
+        <label for="man">M</label>
+        <input type="radio" name="gender" value="man" id="man" />
+      </div>
+      <br />
+      <div>
+        <p>Suas principais qualidades:</p>
+        <label for="int">Inteligência</label>
+        <input type="checkbox" name="int" id="int" /> |
+        <label for="res">Resiliência</label>
+        <input type="checkbox" name="res" id="res" /> |
+        <label for="fis">Preparo Físico</label>
+        <input type="checkbox" name="fis" id="fis" />
+      </div>
+      <br />
+      <div>
+        <textarea
+          placeholder="Porque você gostaria de ser um austronauta?"
+          id="description"
+          name="description"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <button type="submit" value="criar">Enviar</button>
+      </div>
+    </form>
+  </body>
 </html>

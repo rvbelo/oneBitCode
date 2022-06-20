@@ -1,0 +1,34 @@
+li {
+  color: green;
+}
+h1 {
+  color: blueviolet;
+  font-size: 50px;
+  border: 1px solid #ff2200;
+}
+
+h4 {
+  background-color: black;
+  color: #ffffff;
+}
+
+.moon {
+  color: yellow;
+  font-size: 14px;
+}
+
+.big-Texto {
+  font-size: 30px;
+}
+
+#europa {
+  color: #ff2200;
+  font-size: 20px;
+}
+
+body {
+  background-color: cadetblue;
+  background-image: url("https://www.spacex.com/sites/spacex/files/amos17_v2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
