@@ -11,26 +11,153 @@
     <h3>Título menor</h3>
     <h6>Título menor ainda</h6>
     <p>
-      <strong> ipsum dolor sit amet,</strong> consectetur adipisicing elit. Quasi a suscipit
-      accusamus amet ipsa sunt dolore sit debitis temporibus accusantium, esse
-      aspernatur provident atque voluptatum vero quis eligendi ab quo.
+      <strong> ipsum dolor sit amet,</strong> consectetur adipisicing elit.
+      Quasi a suscipit accusamus amet ipsa sunt dolore sit debitis temporibus
+      accusantium, esse aspernatur provident atque voluptatum vero quis eligendi
+      ab quo.
     </p>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi a suscipit
       accusamus amet ipsa sunt dolore sit debitis temporibus accusantium, esse
       aspernatur provident atque voluptatum vero quis eligendi ab quo.
     </p>
-    <hr>
+    <hr />
     <h1>Listas Ordenada e Nao Ordenada</h1>
-<ol>
-  <li>Jupiter</li>
-  <li>Saturno</li>
-  <li>Marte</li>
-</ol>
-<ul>
-  <li>Jupiter</li>
-  <li>Saturno</li>
-  <li>Marte</li>
-</ul>
-  </body>
+    <ol>
+      <li>Jupiter</li>
+      <li>Saturno</li>
+      <li>Marte</li>
+    </ol>
+    <ul>
+      <li>Jupiter</li>
+      <li>Saturno</li>
+      <li>Marte</li>
+    </ul>
+    <hr />
+    <h1>Divs e Span</h1>
+    <h2>Galáxias</h2>
+    <div style="background-color: blue">
+      <p>Galáxia <span style="background-color: green"> Andromeda</span></p>
+      <p>Galáxia Olho negro</p>
+      <p>Galáxia do Cata-Vento</p>
+    </div>
+    <hr />
+    <h1>Atributos HTML</h1>
+    <tag name="valor">Tag</tag>
+    <br />
+    <a target="_blank" href="https://escoladejavascript.com.br">Clique aqui!</a>
+    <br />
+    <img
+      src="https://img.olhardigital.com.br/wp-content/uploads/2019/09/20190916074949.jpg"
+      style="height: 100px"
+      alt=""
+    />
+    <hr />
+    <h1>Criando Tabelas</h1>
+    <table border="1">
+      <caption>Satélites de Urano</caption>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Descobrimento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Titânia</td>
+          <td>187</td>
+        </tr>
+        <tr>
+          <td>Oberon</td>
+          <td>187</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h1>Conhecendo os Forms e Validando os Campos</h1>
+    <h3>Encontre no Google</h3>
+    <form action="https://www.google.com/search" >
+      <label for="q">O que deseja pesquisar?</label>
+      <input type="text" id="q" name="q" placeholder="Nasa, SpaceX" required autocomplete="off" min="5" max="15">
+      <input type="submit" value="Pesquisar">
+    </form>
+    <hr />
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Internet Explore">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <hr />
+    <h1>Aprofudandos nos Inputs</h1>
+    <form action="https://www.example.com">
+      <input type=" text" name="firstname"><br/>
+      <input type="password" name="password"><br/>
+      <input type="radio" name="gender" value="male" checked> Male<br/>
+      <input type="radio" name="gender" value="female" >Female<br/>
+      <input type="radio" name="gender" value="other" >Other<br/>
+      <input type="checkbox" name="vehicle1" value="bike">I have a bike<br/>
+      <input type="color" name="color"><br/>
+      <input type="date" name="bday"><br/>
+      Select a file: <input type="file" name="myFile"><br/>
+      <input type="search" name="googlesearch"><br/>
+    </form>
+    <hr />
+    <h1>Criando Primeiro Form</h1>
+    <h3>Cadastro da liga dos astronautas</h3>
+    <form action="">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <br/>
+<div>
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email">
+  <label for="pass">Password:</label>
+  <input type="password" name="password" id="password">
+</div>
+<br/>
+   <div>
+    <label for="date">Data de Nascimento:</label>
+    <input type="data" name="date" id="date">
+    <label for="upload">- Foto: </label>
+    <input type="file" name="upload" id="upload">
+   </div>
+   <br/>
+   <div>
+    <label for="nacionality">Nacionalidade: </label>
+    <select name="nacionality" id="nacionality">
+      <option value="russian">Russo</option>
+      <option value="american">Americano</option>
+      <option value="brasilian">Brasileiro</option>
+    </select>
+    Genero:
+    <label for="female">F</label>
+    <input type="radio" name="gender" value="femaly" id="female"> 
+    <label for="man">M</label>
+    <input type="radio" name="gender" value="man" id="man">
+   </div>
+   <br/>
+   <div>
+    <p>Suas principais qualidades:</p>
+    <label for="int">Inteligência</label>
+    <input type="checkbox" name="int" id="int"> |
+    <label for="res">Resiliência</label>
+    <input type="checkbox" name="res" id="res"> |
+    <label for="fis">Preparo Físico</label>
+    <input type="checkbox" name="fis" id="fis"> 
+   </div>
+   <br/>
+<div>
+  <textarea placeholder="Porque você gostaria de ser um austronauta?" id="description" name="description" cols="30" rows="10"></textarea>
+</div>
+<br/>
+<div>
+  <button type="submit" value="criar">Enviar</button>
+</div>
+  </form>
+</body>
 </html>
