@@ -32,3 +32,35 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+li a{
+  color: red;
+  font-size: 30px;
+  font-style: italic;
+}
+
+li > a{
+  color: coral;
+  font-size: 30px;
+  font-style: italic;
+}
+
+h2 + h3{
+  border: 4px dashed;
+  color: darkgreen;
+}
+
+a[href="/recibo"]{
+  color: orchid
+}
+
+/*
+li:nth-of-type(odd) - Pares
+*/
+
+li:nth-of-type(3){
+  color: darkslategray;
+  font-style: italic;
+  font-weight: 700;
+
+}
